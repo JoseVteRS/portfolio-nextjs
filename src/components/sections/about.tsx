@@ -1,7 +1,3 @@
-import { IconTypescript, IconNextjs, IconReactjsFill, IconHtml5 } from "../icons"
-import { IconCss3 } from "../icons/css-icon"
-
-
 export const About = () => {
     return (
         <section className='w-2/3 mx-auto mb-20'>

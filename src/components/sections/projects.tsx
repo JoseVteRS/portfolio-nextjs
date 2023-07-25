@@ -2,6 +2,7 @@ import React from 'react'
 import { LayoutSection } from '../layouts/section-layout'
 import Link from 'next/link'
 import { IconExternalLink, IconGithub } from '../icons'
+import Image from 'next/image'
 
 
 const PROJECTS = [
@@ -9,7 +10,7 @@ const PROJECTS = [
     id: 1,
     name: 'Portfolio profesional',
     description: 'Portfolio profesional para mostrar mis proyectos y habilidades.',
-    url: 'https://www.google.com/',
+    url: 'https://josevte.com',
     github: 'https://www.google.com/',
     image: 'https://picsum.photos/200/300',
     tecnologies: [
@@ -23,7 +24,7 @@ const PROJECTS = [
     id: 2,
     name: 'Controlador de gastos',
     description: 'App para registrar y controlar los gastos mensuales.',
-    url: 'https://www.google.com/',
+    url: 'https://josevte.com/gastos',
     github: 'https://www.google.com/',
     image: 'https://picsum.photos/200/300',
     tecnologies: [
@@ -66,14 +67,14 @@ const PROJECTS = [
 
 export const ProjectsSection = () => {
   return (
-    <LayoutSection title='Proyectos' subtitle='Todo los proyectos que he realizado' >
+    <LayoutSection title='Proyectos' subtitle='Todo los proyectos que he realizado' id="proyectos" >
 
       <div className='grid grid-cols-2 gap-5 mt-10' >
         {
           PROJECTS.map(project => (
             <div key={project.id} className='shadow-xl dark:bg-black dark:shadow-gray-900/50 rounded-xl' >
               <div className='w-full h-64' >
-                <img className='w-full h-full object-cover rounded-lg' src={project.image} alt={project.name} />
+                <Image width={300} height={200} className='w-full h-full object-cover rounded-lg' src={project.image} alt={project.name} />
               </div>
 
               <div className="p-4">
@@ -97,7 +98,7 @@ export const ProjectsSection = () => {
                     target='_blank'
                     rel='noopener noreferrer'
                     title={`Visitar ${project.name}`}
-                    className='flex gap-1 justify-center items-center bg-sky-600 text-white rounded w-full p-2 transition-all hover:bg-sky-900'
+                    className='flex gap-1 justify-center items-center bg-sky-600 text-white rounded w-full p-2 transition-all dark:hover:bg-sky-500'
                     href={project.url} >
                     <IconExternalLink />
                     Visitar
@@ -106,7 +107,7 @@ export const ProjectsSection = () => {
                     target='_blank'
                     rel='noopener noreferrer'
                     title={`Visitar repositorio en Github de ${project.name}`}
-                    className='flex gap-1 justify-center items-center dark:bg-white dark:text-black rounded w-full p-2 transition-all hover:bg-neutral-700' href={project.github} >
+                    className='flex gap-1 justify-center items-center dark:bg-white dark:text-black rounded w-full p-2 transition-all dark:hover:bg-neutral-200' href={project.github} >
                     <IconGithub />
                     Github
                   </Link>

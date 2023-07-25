@@ -1,8 +1,7 @@
-import { ReactNode } from 'react'
 import { LayoutSection } from '../layouts/section-layout'
-import Image from 'next/image'
 import { IconTypescript, IconReactjsFill, IconNextjs, IconHtml5 } from '@/components/icons'
 import { IconCss3 } from '../icons/css-icon'
+
 
 export const TECNOLOGIES = [
     {
@@ -53,7 +52,7 @@ export const TECNOLOGIES = [
 
 export const TecnologiesSection = () => {
     return (
-        <LayoutSection title='Tecnologies' subtitle=' Teconologias que más he utilizado '>
+        <LayoutSection title='Tecnologies' subtitle=' Teconologias que más he utilizado' id='tecnologias'>
 
             <ul className='flex items-center justify-center gap-5 mt-10'>
                 {

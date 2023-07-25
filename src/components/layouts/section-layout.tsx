@@ -3,12 +3,13 @@ import React from 'react'
 interface Props {
     children: React.ReactNode,
     title: string,
+    id?: string,
     subtitle?: string
 }
 
-export const LayoutSection = ({ title, subtitle, children }: Props) => {
+export const LayoutSection = ({ title, subtitle, id, children }: Props) => {
     return (
-        <section className='mx-auto py-20 w-2/3 ' >
+        <section className='mx-auto py-20 w-2/3 ' id={id} >
 
             <h2 className='text-6xl text-sky-600 font-bold text-center'>{title}</h2>
 
