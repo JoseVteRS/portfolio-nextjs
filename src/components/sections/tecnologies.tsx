@@ -1,5 +1,5 @@
 import { LayoutSection } from '../layouts/section-layout'
-import { IconTypescript, IconReactjsFill, IconNextjs, IconHtml5 } from '@/components/icons'
+import { IconTypescript, IconReactjsFill, IconNextjs, IconHtml5, IconJavascript } from '@/components/icons'
 import { IconCss3 } from '../icons/css-icon'
 
 
@@ -11,13 +11,13 @@ export const TECNOLOGIES = [
         icon: <IconTypescript className="h-12 w-12 text-white" />,
         url: 'https://www.typescriptlang.org/'
     },
-    // {
-    //     id: 2,
-    //     name: 'Javascript',
-    //     description: 'Lenguaje de programación',
-    //     icon: <IconJavascript className="h-12 w-12 text-white" />,
-    //     url: 'https://developer.mozilla.org/es/docs/Web/JavaScript'
-    // },
+    {
+        id: 2,
+        name: 'Javascript',
+        description: 'Lenguaje de programación',
+        icon: <IconJavascript className="h-12 w-12 text-white" />,
+        url: 'https://developer.mozilla.org/es/docs/Web/JavaScript'
+    },
     {
         id: 3,
         name: 'React',
