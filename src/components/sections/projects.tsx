@@ -69,7 +69,7 @@ export const ProjectsSection = () => {
   return (
     <LayoutSection title='Proyectos' subtitle='Todo los proyectos que he realizado' id="proyectos" >
 
-      <div className='grid grid-cols-2 gap-5 mt-10' >
+      <div className='grid md:grid-cols-2 gap-5 mt-10 px-5' >
         {
           PROJECTS.map(project => (
             <div key={project.id} className='shadow-xl dark:bg-black dark:shadow-gray-900/50 rounded-xl' >

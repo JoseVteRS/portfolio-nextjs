@@ -1,9 +1,9 @@
 export const About = () => {
     return (
-        <section className='w-2/3 mx-auto mb-20'>
+        <section className='w-full px-5 md:w-2/3 mx-auto mb-20'>
             <div className='mt-32'>
-                <span className='font-bold text-6xl dark:text-neutral-300'>Jose Vte</span>
-                <h1 className='font-bold text-5xl text-sky-600'>Desarrollador Web</h1>
+                <span className='font-bold text-4xl md:text-6xl dark:text-neutral-300'>Jose Vte</span>
+                <h1 className='font-bold text-5xl md:text-5xl text-sky-600 project-title'>Desarrollador Web</h1>
             </div>
 
             <div>

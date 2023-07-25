@@ -54,11 +54,11 @@ export const TecnologiesSection = () => {
     return (
         <LayoutSection title='Tecnologies' subtitle=' Teconologias que más he utilizado' id='tecnologias'>
 
-            <ul className='flex items-center justify-center gap-5 mt-10'>
+            <ul className='flex flex-wrap mx-auto items-center justify-center gap-5 mt-10'>
                 {
                     TECNOLOGIES.map((tec) => {
                         return (
-                            <li key={tec.id} className="rounded-md bg-sky-600 p-2" >
+                            <li key={tec.id} className="rounded-md bg-sky-600 p-2 grid place-items-center" >
                                 {tec.icon}
 
                             </li>
