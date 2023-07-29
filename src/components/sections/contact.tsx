@@ -12,7 +12,7 @@ export const ContactSection = () => {
                         rel="noopener noreferrer"
                         className="flex flex-row items-center justify-center"
                     >
-                        <IconLinkedin className="text-sky-600 w-12 h-12 mr-2 hover:text-sky-500 transition-all" />
+                        <IconLinkedin className="text-pearl-600 w-12 h-12 mr-2 hover:text-pearl-500 transition-all" />
                     </a>
                 </div>
             </div>

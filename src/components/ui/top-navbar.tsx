@@ -8,7 +8,7 @@ import { Link, animateScroll as scroll } from 'react-scroll'
 
 export const TopNavbar = () => {
     return (
-        <nav className='bg-sky-600 p-3 px-12'>
+        <nav className='bg-pearl-600 p-3 px-12'>
             <ul className='text-white flex gap-5 items-center justify-end'>
                 {
                     NAV_LINKS.map((link) => (

@@ -1,6 +1,7 @@
 import { LayoutSection } from '../layouts/section-layout'
 import { IconTypescript, IconReactjsFill, IconNextjs, IconHtml5, IconJavascript } from '@/components/icons'
 import { IconCss3 } from '../icons/css-icon'
+import Link from 'next/link'
 
 
 export const TECNOLOGIES = [
@@ -58,9 +59,16 @@ export const TecnologiesSection = () => {
                 {
                     TECNOLOGIES.map((tec) => {
                         return (
-                            <li key={tec.id} className="rounded-md bg-sky-600 p-2 grid place-items-center" >
-                                {tec.icon}
-
+                            <li key={tec.id} >
+                                <Link
+                                    href={tec.url}
+                                    className="border border-transparent rounded-md bg-gray-500/20 shadow-lx p-5 grid place-items-center hover:border-gray-500/50 hover:transform hover:scale-105 transition-all duration-200"
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    title={`Visitar ${tec.name}`}
+                                >
+                                    {tec.icon}
+                                </Link>
                             </li>
                         )
                     })
